@@ -7,9 +7,9 @@ const productController = {
             // get the data from the request body
             const { name, description, price, image, category, stock } = req.body;
 
-            if (!req.file) {
-                return res.status(400).send({ message: 'Please upload an image' });
-            }
+            // if (!req.file) {
+            //     return res.status(400).send({ message: 'Please upload an image' });
+            // }
 
             // create a new product
             const newProduct = new Product({
